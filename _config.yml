@@ -1,0 +1,18 @@
+title: Abhishek Nagekar
+description: Web & Security Engineer
+site_title: '@abhn - Abhishek Nagekar'
+
+# Build settings
+markdown: kramdown
+exclude: [vendor/ruby]
+
+
+# absolute or relative
+profile_picture: assets/images/pp.jpg
+
+# Google Analytics ID
+google_analytics: 
+
+# deployment
+host: 0.0.0.0
+port: 5000
