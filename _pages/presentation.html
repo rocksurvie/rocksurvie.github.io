@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html data-lt-installed="true" lang="en-us"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Ma page avec un menu</title>
-	<style data-css-polyfilled="true">
-		/* Style pour le menu */
-		ul {
+
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Présentation de deux entreprises</title>
+        <style>
+            body {
+                background-color: #000000;
+                color: #FFFFFF;
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                font-size: 36px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .company {
+                margin: 50px;
+                padding: 30px;
+                background-color: #FFFFFF;
+                color: #000000;
+                font-size: 18px;
+                text-align: justify;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            }
+            .company:nth-child(odd) {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+            .company h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .company p {
+                margin-bottom: 10px;
+            }
+            ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -27,411 +61,139 @@
 		li a:hover {
 			background-color: #111;
 		}
-	</style>
-<style id="virtual-stylesheet-0" data-no-css-polyfill="true"></style></head>
-<body>
-	<!-- Le menu -->
-	<ul>
-		<li><a href="presentation.html">Presentation Entreprise</a></li>
-		<li><a href="#nouvelles">Nouvelles</a></li>
-		<li><a href="#services">Services</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
+        .container {
+        text-align: center;
+        padding-left: 50;
+      }
 
-
-
-    
-    
-      
-    <head>
-    
-      
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
-        
-        <link rel="stylesheet" href="../vendor/css/normalize.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="../vendor/css/hint.base.min.css"/>
-        <link rel="stylesheet" href="../vendor/css/semi-transparent-buttons.css"/>
-        <link rel="stylesheet" href="../assets/css/progress.css"/>
-        <link rel="stylesheet" href="../assets/css/main.css"/>
-        <link rel="stylesheet" href="../assets/css/card.css"/>
-        <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-        <meta name="description" content="Portfolio - Abhishek Nagekar | Full stack web development, open source and information security">
+      .services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 50px auto;
+			max-width: 1200px;
+		}
+		.service {
+			background-color:  rgb(253, 0, 0);
+			border-radius: 5px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+			margin-bottom: 30px;
+			width: calc(50% - 20px);
+			padding: 20px;
+			box-sizing: border-box;
+			position: relative;
+			transition: transform 0.2s ease-in-out;
+			cursor: pointer;
+		}
+		.service:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+		}
+		.service h3 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.service p {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		.service::before {
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 50%;
+			transform: translateX(-50%);
+			border: 10px solid transparent;
+			border-bottom: 10px solid #ffffff;
+		}
+		.service::after {
+			content: '';
+			position: absolute;
+			top: -22px;
+			left: 50%;
+			transform: translateX(-50%);
+			border: 10px solid transparent;
+			border-bottom: 10px solid #f1f1f1;
+		}
+		.service:nth-child(even)::before,
+		.service:nth-child(even)::after {
+			border-bottom-color: #ffffff;
+		}
+        </style>
+        	<ul>
+                <li><a href="presentation.html">Presentation Entreprise</a></li>
+                <li><a href="#nouvelles">Nouvelles</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
     </head>
+    <body>
+        <h1>Présentation de ASHLOC</h1>
 
 
 
-
-
-    
-<section class="head" id="nav">
-    <div class="head-inner-wrap">
-        <div class="profile-pic-div animated">
-            <a href="#about" class="profile-pic-link"><img src="../assets/images/ASH_logA_594.png" ></a>
+        <div class="container">
+            <img src="../assets/images/ASH_logA_594.png" alt="Description de mon image">        
         </div>
-        <div class="head-name head-title animated" id="head-name">ashloc</div>
-        <div class="head-punchline animated">technicien informatique</div>
-        <div class="head-menu-wrap">
-            <a class="semi-transparent-button with-border nav-links" href="#about">L'histoire de l'Entreprise </a>
-            <a class="semi-transparent-button with-border nav-links" href="#skills">Nos services</a>
-            <a class="semi-transparent-button with-border nav-links" href="#projects">PROJECTS</a>
-            <a class="semi-transparent-button with-border nav-links" href="#blog-posts">BLOG</a>
+
+        <div class="company">
+            <h2>L'histoire de l'Entreprise</h2>
+            <p>ASH-Loc est une SASU créée en 2019, elle a pour capital social 5,500 euro et pour chiffre d'affaire 51,200 euros en 2020. le domaine d'activité de ASH-Loc est la maintenance proactive. les clients de l'entreprise sont principalement des PME et TPE. </p>
         </div>
-    </div>
-</section>
 
-
-    <div class="section-wrapper">
-    <section class="section about" id="about">
-        <div id="about-text">
-            <div class="section-heading">L'histoire de l'Entreprise </div>
-            <p class="paragraph-text justify-text">
-                ASH-Loc est une SASU créée en 2019, elle a pour capital social 5,500 euro et pour chiffre d'affaire 51,200 euros en 2020. le domaine d'activité de ASH-Loc est la maintenance proactive. les clients de l'entreprise sont principalement des PME et TPE. 
-            </p>
-        </div>
-    </section>
-</div>
-
-
-    
-<div class="section-wrapper">
-    <section class="section skills" id="skills">
-        <div>
-            <div class="section-heading" id="skills-text">Skills Systheme informtion</div>
-
-            <div class="skills-grid">
-                <div class="what-i-do">
-                    <h3 class="center-align skills-subsection">Summary</h3>
-                    <p class="paragraph-text center-align">
-                        I'm a web engineer fluent in modern web 
-development. I have a serious passion for engineering solutions using 
-the internet. InfoSec guy, blue team. Let's build a beautiful, speedy 
-and safe web together.
-                    </p>
-                </div>
-                <div class="technical-skills">
-                    <h3 class="center-align skills-subsection">Technical</h3>
-                    <div class="progress-bars">
-                        <div class="skillbar clearfix " data-percent="85%">
-                            <div class="skillbar-title" style="background: #2980b9;"><span>Windows</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 85%;"></div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="50%">
-                            <div class="skillbar-title" style="background: #2980b9;"><span>Server</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 50%;"></div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="70%">
-                            <div class="skillbar-title" style="background: #2980b9;"><span>Debian</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 70%;"></div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="70%">
-                            <div class="skillbar-title" style="background: #2980b9;"><span>Apple</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 70%;"></div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="50%">
-                            <div class="skillbar-title" style="background: #2980b9;"><span>html</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 50%;"></div>
-                        </div> <!-- End Skill Bar -->
-                        
-                        <div class="skillbar clearfix " data-percent="25%">
-                            <div class="skillbar-title" style="background: #2980b9"><span>javaScript</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 25%;"></div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="70%">
-                            <div class="skillbar-title" style="background: #2980b9"><span>InfoSec</span></div>
-                            <div class="skillbar-bar" style="background: rgb(52, 152, 219); width: 70%;"></div>
-                        </div> <!-- End Skill Bar -->
-                    </div>
-
-                </div>
-            </div></div></section>
-
-        
-
-
-    <div class="section-wrapper">
-    <section class="section projects" id="projects">
-        <div class="full-width">
-            <div class="section-heading" id="featured-projects-text">Projects</div>
-            
-                <div class="project-technologies">
-
-                    <a id="featured" class="semi-transparent-button with-border white-button white-button-hover" onclick="selected('featured')">Featured</a>
-                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">All</a>
-                    <a id="webdev" class="semi-transparent-button with-border white-button" onclick="selected('webdev')">WebDev</a>
-                    <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('native')">Native</a>
-                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">Security</a>
-                    <a id="diy" class="semi-transparent-button with-border white-button" onclick="selected('diy')">DIY</a>
-
-                </div>
-
-            <div class="projects-wrapper" style="">
-        <div class="wrapper">
-                
-            <div class="card radius shadowDepth1">
-
-                <div class="card__image border-tlr-radius">
-                        <a href="https://github.com/abhn/Mporter">
-                            <img src="mentors.jpg" alt="image" id="project-image" class="border-tlr-radius">
-                        </a>
-                    </div>
-
-        
-                <div class="card__content card__padding">
-        
-                    <article class="card__article">
-                        <h2><a href="https://github.com/abhn/Mporter">Mporter</a></h2>
-        
-                        <p class="paragraph-text-normal">Flask web application for easy reporting updates to one's mentor. Multi-user support, easy to deploy and use. <a href="https://mporter.co/">Demo</a></p>
-                    </article>
-
-                                
-                    <div class="card__meta">
-                        <span class="project-technology paragraph-text-normal">Flask</span><span class="project-technology paragraph-text-normal">Celery</span><span class="project-technology paragraph-text-normal">Python</span>
-                    </div>
-
-                </div>
+        <h1>Services de l'entreprise</h1>
+        <div class="services">
+            <div class="service">
+                <h3>Support téléphonique</h3>
+                <p>Un support téléphonique en tout temps</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>Description du service 2</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>Description du service 3</p>
+            </div>
+            <div class="service">
+                <h3>Service 4</h3>
+                <p>Description du service 4</p>
             </div>
         </div>
-    
-        <div class="wrapper">
-                
-            <div class="card radius shadowDepth1">
 
-                <div class="card__image border-tlr-radius">
-                        <a href="https://github.com/abhn/Wall-E">
-                            <img src="mobile-landscape.jpg" alt="image" id="project-image" class="border-tlr-radius">
-                        </a>
-                    </div>
 
-        
-                <div class="card__content card__padding">
-        
-                    <article class="card__article">
-                        <h2><a href="https://github.com/abhn/Wall-E">Wall-E</a></h2>
-        
-                        <p class="paragraph-text-normal">A modern Jekyll theme with grid frontpage, beautiful typography, mobile responsive, made with Semantic UI. <a href="http://wall-e-jekyll.github.io/">Demo</a></p>
-                    </article>
+        <h1>Présentation de SPE7</h1>
 
-                                
-                    <div class="card__meta">
-                        <span class="project-technology paragraph-text-normal">Semantic UI</span><span class="project-technology paragraph-text-normal">Jekyll</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="wrapper">
-                
-            <div class="card radius shadowDepth1">
-
-                <div class="card__image border-tlr-radius">
-                        <a href="https://github.com/abhn/Marvel">
-                            <img src="collage.jpg" alt="image" id="project-image" class="border-tlr-radius">
-                        </a>
-                    </div>
-
-        
-                <div class="card__content card__padding">
-        
-                    <article class="card__article">
-                        <h2><a href="https://github.com/abhn/Marvel">Marvel</a></h2>
-        
-                        <p class="paragraph-text-normal">Attendance marking tool that uses face recognition for marking attendance and firebase for tracking and analytics. </p>
-                    </article>
-
-                                
-                    <div class="card__meta">
-                        <span class="project-technology paragraph-text-normal">Android</span><span class="project-technology paragraph-text-normal">OpenCV</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="wrapper">
-                
-            <div class="card radius shadowDepth1">
-
-                <div class="card__image border-tlr-radius">
-                        <a href="https://github.com/abhn/mpw">
-                            <img src="mpw.jpg" alt="image" id="project-image" class="border-tlr-radius">
-                        </a>
-                    </div>
-
-        
-                <div class="card__content card__padding">
-        
-                    <article class="card__article">
-                        <h2><a href="https://github.com/abhn/mpw">Master Password</a></h2>
-        
-                        <p class="paragraph-text-normal">Master Password is an ingenious password solution that makes your passwords truly impossible to lose. <a href="https://www.nagekar.com/mpw">Demo</a></p>
-                    </article>
-
-                                
-                    <div class="card__meta">
-                        <span class="project-technology paragraph-text-normal">Semantic UI</span><span class="project-technology paragraph-text-normal">CSS3</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-        </div>
-    </section>
-</div>
-
-    <div class="section-wrapper">
-    <section class="section" id="blog-posts">
-        <div class="full-width">
-            <div class="section-heading" id="recent-posts-text">Blog</div>
-            <div class="blogs-wrapper" id="rss-feeds">
-        <div class="blog-post" onclick="blog_link_click('https://www.nagekar.com/2017/02/trip-to-bramhatal-uttarakhand.html');">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com/2017/02/trip-to-bramhatal-uttarakhand.html">Trek To Bramhatal (Uttarakhand)</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="right-open-mini.svg">
-            </div>
-        </div>
-        
-        <div class="blog-post" onclick="blog_link_click('https://www.nagekar.com/2017/08/privacy.html');">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com/2017/08/privacy.html">Privacy - How I Converted</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="right-open-mini.svg">
-            </div>
-        </div>
-        
-        <div class="blog-post" onclick="blog_link_click('https://www.nagekar.com/2018/01/jagriti-yatra.html');">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com/2018/01/jagriti-yatra.html">Jagriti Yatra 2017</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="right-open-mini.svg">
-            </div>
-        </div>
-        
-        <div class="blog-post" onclick="blog_link_click('https://www.nagekar.com/2017/08/private-cloud-part-2.html');">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com/2017/08/private-cloud-part-2.html">Private Cloud Part 2 | Encrypted Storage With NextCloud</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="right-open-mini.svg">
-            </div>
-        </div>
-        
-        <div class="blog-post" onclick="blog_link_click('https://www.nagekar.com/2018/07/eli5-how-https-works.html');">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com/2018/07/eli5-how-https-works.html">ELI5 - How HTTPS Works</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="right-open-mini.svg">
-            </div>
-        </div>
-        
-    <div class="blog-post more-blogs" onclick="blog_link_click('https://www.nagekar.com');">
-
-        <div class="blog-link">
-
-            <h3><a href="https://www.nagekar.com/">Visit the blog for more posts</a></h3>            
-
+        <div class="container">
+            <img src="../assets/images/a8d52ca3a3e5507312255cd949ad339e.png" alt="Description de mon image">        
         </div>
 
-        <div class="blog-goto-link">
-            <img class="blog-arrow" src="right-open-mini.svg">
+        <div class="company">
+            <h2>L'histoire de l'Entreprise</h2>
+            <p>Loc est une SASU créée en 2019, elle a pour </p>
         </div>
-    </div>
-    </div>
-        </div>
-    </section>
-</div>
-        
-    <div class="section-wrapper">
-    <section class="section extra" id="extra">
-        <div>
-            <div class="section-heading" id="chat-text">Contact</div>
-            <p class="paragraph-text justify-text">
-                I'd love to hear from you! I'm open to collaborations, 
-especially on open source projects. Interesting work opportunity? Shoot.
- Just want to have a coffee and talk about stars, cars or Pokémon? 
-Awesome. 
-            </p>
-            <p class="paragraph-text justify-text">
-                Please feel free to write to me for anything: <a href="mailto:"></a> (<a href="https://www.nagekar.com/publickey.abhishek@nagekar.com.asc">PGP Key</a>). It might take me a day to get back, but rest assured, you'll hear from me.
-            </p>
-            <p class="paragraph-text justify-text">
-                My resume is available here: <a href="https://rocksurvie.github.io/resume/resume.pdf">PDF</a>, <a href="https://rocksurvie.github.io/resume/resume.docx">DOC</a>
-            </p>
-            <div class="extra-links">
-                <span class="hint--bottom bottom-link" aria-label="Email">
-                    <a href="mailto:"><i class="head-icon fas fa-envelope"></i></a>
-                </span>
-                <span class="hint--bottom bottom-link" aria-label="PGP Key">
-                    <a href="https://www.nagekar.com/publickey.abhishek@nagekar.com.asc"><i class="head-icon fas fa-key"></i></a>
-                </span>
-                <span class="hint--bottom bottom-link" aria-label="GitHub">
-                    <a href="https://github.com/"><i class="head-icon fab fa-github"></i></a>
-                </span>
-                <span class="hint--bottom bottom-link" aria-label="Web Blog">
-                    <a href=""><i class="head-icon fas fa-rss"></i></a>
-                </span>
-                <span class="hint--bottom bottom-link" aria-label="Keybase">
-                    <a href="https://keybase.io/"><i class="head-icon fab fa-keybase"></i></a>
-                </span>
-                <!-- <span class="hint--bottom bottom-link" aria-label="Reddit">
-                    <a href="https://www.reddit.com/u/"><i class="head-icon fab fa-reddit"></i></a>
-                </span>
-                <span class="hint--bottom bottom-link" aria-label="Twitter">
-                    <a href="https://twitter.com/"><i class="head-icon fab fa-twitter"></i></a>
-                </span> -->
+    
+        <h1>Services de l'entreprise</h1>
+        <div class="services">
+            <div class="service">
+                <h3>Service 1</h3>
+                <p>Description du service 1</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>Description du service 2</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>Description du service 3</p>
+            </div>
+            <div class="service">
+                <h3>Service 4</h3>
+                <p>Description du service 4</p>
             </div>
         </div>
-    </section>
-</div>
-
-    <footer class="footer footer-text">
-    Théophile Alsac © 2023
-</footer>
 
 
-    <script src="jquery-3.3.1.js"></script>
-<script src="jquery.smooth-scroll.js"></script>
-<script src="css-polyfills.min.js"></script>
-<script src="flexibility.js"></script>
-<script src="main.js"></script>
-<script src="projects.js"></script>
-
-
-
-</body></html>
+    </body>
+    </html>
+    
