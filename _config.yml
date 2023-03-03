@@ -1,5 +1,5 @@
-title: Abhishek Nagekar
-description: Web & Security Engineer
+title: Théophile Alsac
+description: developper junior | technicien informatique 
 site_title: '@abhn - Abhishek Nagekar'
 
 # Build settings
@@ -16,3 +16,15 @@ google_analytics:
 # deployment
 host: 0.0.0.0
 port: 5000
+
+
+include:
+  - _pages
+
+
+navigation:
+  - title: Accueil
+    url: /
+  - title: Ma nouvelle page
+    url: /PresentationEntreprises.html
+
